@@ -14,3 +14,4 @@ Answers to the questions
 3. ghana , cameroon and senegal
 4. the last image
 5. korea - japan
+
