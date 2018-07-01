@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Test you knowledge on the world cup"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:background="#9e9e9e"
+                android:layout_marginBottom="6dp"/>
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:hint="please write your name here"
+                android:inputType="textCapWords" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#e0e0e0">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:padding="16dp"
+                android:text="1. what is the name of the first nation to win the world cup and the year"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uruguay,1930" />
+
+                <RadioButton
+                    android:id="@+id/radio_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Italy,1934" />
+            </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#e0e0e0"
+                android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:padding="16dp"
+                android:text="2. What is the name of the nation that has won more world cup trophies"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:hint="write answer here"
+                android:inputType="textCapWords" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#e0e0e0"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="3. check all the african countries to reach quater finals of the world cup"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/ghanaCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="ghana"
+                android:textAllCaps="true" />
+
+            <CheckBox
+                android:id="@+id/cameroonCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="cameroon"
+                android:textAllCaps="true" />
+
+            <CheckBox
+                android:id="@+id/senegalCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="senegal"
+                android:textAllCaps="true" />
+
+            <CheckBox
+                android:id="@+id/nigeriaCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="nigeria"
+                android:textAllCaps="true" />
+
+            <CheckBox
+                android:id="@+id/egyptCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="egypt"
+                android:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#e0e0e0"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. which of the following is the world cup trophy"
+                android:textSize="16sp"
+                android:padding="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/african_cup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/africa"
+                        android:button="@null"
+                        android:padding="16dp"
+                        android:onClick="changecolor"
+                        android:layout_marginLeft="16dp"/>
+
+                    <RadioButton
+                        android:button="@null"
+                        android:background="@drawable/champions"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/champions_league"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:onClick="changecolor"/>
+                    <RadioButton
+                        android:button="@null"
+                        android:background="@drawable/worldcup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/world_cup"
+                        android:padding="16dp"
+                        android:onClick="changecolor"/>
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#e0e0e0"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. which nation hosted 2002 world cup"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:layout_marginBottom="6dp"/>
+            <RadioGroup
+                android:id="@+id/radio_group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Korea-Japan" />
+
+                <RadioButton
+                    android:id="@+id/radio_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="France" />
+                <RadioButton
+                    android:id="@+id/radio_button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Korea" />
+                <RadioButton
+                    android:id="@+id/radio_button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Japan" />
+            </RadioGroup>
+        </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="summitAnswer"
+                android:padding="16dp"
+                android:text="submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
